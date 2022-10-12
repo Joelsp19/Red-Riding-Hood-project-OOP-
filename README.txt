@@ -1,5 +1,8 @@
 Virtual World Project
-CSC 203, Fall '21
+Done in CSC 203, Fall '21
+Profesor Kirsten Mork
+
+
 
 Simulation Rules:
 
