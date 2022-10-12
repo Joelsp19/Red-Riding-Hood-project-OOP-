@@ -1,0 +1,25 @@
+DESIGN
+
+in WorldModel:
+load() - loads the entities into the world so it makes sense that the WorlModel loads the world
+processLine() - load is the only method that uses processLine(a helper method)
+addEntitity() - adding an entity into the world/uses the entities instance variable of the class
+tryAddEntity() - used a lot in parse*(), and utilizes addEntity()
+parse*() - used a lot in processLine() so it makes sense to keep the functions in the same class
+
+in Entity:
+transform*() - the entity itself was transforming so it makes sense for this method to be a part of the entity class
+findNearest()/nearestEntity() - it is looking for the nearest entity near a specific entity object
+distanceSquared()/getNumFromRange() - only utilized in Entity, so they can be seen as helper functions/static util functions
+that help implement some methods
+
+in WorldView:
+clamp() - only utilized in shiftView() which is in WorldView, so it is a static method that helps shiftView work
+
+in ImageStore:
+added some static final constants - these constants were only used in the ImageStore methods
+
+in Functions:
+moveTo* - there isn't a place to put moveTo functions that would represent an Entity moving to another target. 
+create* - although these methods could be placed in Entity or Action classes since they involve the creation of
+Entity and Action, it wouldn't make sense for a specific entity to create another Entity. 

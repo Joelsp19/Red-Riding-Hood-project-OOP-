@@ -1,0 +1,18 @@
+how to trigger the event:
+The event is triggered by the second mouse click on a space in the world without an entity
+(this is so that the keyboard controls can be activated first and the frame can be moved)
+
+what should happen when the event is triggered:
+Grandma's house is created, a long with a Wolf entity and cloud backgrounds. 
+
+what the affected entities should do:
+The effected entities are the fairies. The fairies turn into guardians that "upgrade" 
+red riding hood by giving her a faster animation/action period (to some limit)
+once the limit is reached, then the guardians give her cookies. 
+
+what the new entity is and how it should behave:
+The new entity created on click should follow red riding hood. He can move in 
+diagnal and cardinal directions. Everytime the wolf moves adjacent to red riding hood
+his animation/action period is slowed (he still has to digest what he ate). The world effect
+area(clouds) are also increased 
+
